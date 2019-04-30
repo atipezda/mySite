@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+#peace{
+    animation: move 6s ease-in-out infinite;
+}
+
+
+
+@keyframes move{
+    0%{
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(120px) translateY(-250px);
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+}
