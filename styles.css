@@ -1,10 +1,24 @@
 body{
     background-color: black;
-    overflow: show;
+    overflow-y: scroll; 
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255), 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #2196F3;
+  border-radius: 10px;
+}
+
+
 
 #peace{
     animation: move 6s ease-in-out infinite;
@@ -44,7 +58,7 @@ nav{
     padding: 20px 30px;
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: flex-start;
     width: 90%;
 }
@@ -97,7 +111,7 @@ nav{
     display: flex;
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -130,4 +144,108 @@ nav{
     color: rgb(255, 255, 255);
     letter-spacing: 0.186em;
     text-align: justify;
+}
+#lower{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15vh;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#lft{
+    font-size: 24px;
+    letter-spacing: 0.241em;
+    text-align: right;
+}
+#line{
+    align-self: center;
+    border-radius: 6px;
+    width: 7px;
+    height: 100px;
+    margin: 0 17px;
+    background-color: rgb(255, 255, 255);
+}
+
+#rgt{
+    font-size: 24px;
+    letter-spacing: 0.241em;
+    text-align: left;
+}
+#lft p:first-child{
+    color: #2196F3;
+}
+#rgt p:last-child{
+    color: #2196F3;
+}
+#lowcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20vh;
+    width: 100%;    
+}
+#lftalg{
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+#linelow{
+    width: 182px;
+    height: 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    align-self: center;
+}
+#lftalg img{
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+}
+.flx{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.flx p{
+    margin-left: 50px;
+    font-size: 54px;
+    letter-spacing: 0.241em;
+    color: #2196F3;
+}
+#itms{
+    font-size: 24px;
+    letter-spacing: 0.241em;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+#moreitems{
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 0.241em;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15vw;
+}
+.flexrow{
+    display: inline-block;
+}
+.flexrow i {
+    font-style: normal;
+    color: #2196F3;
 }
