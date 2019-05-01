@@ -1,6 +1,9 @@
 body{
     background-color: black;
     overflow: show;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 
 #peace{
@@ -8,11 +11,8 @@ body{
 }
 
 svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes move{
@@ -24,7 +24,7 @@ svg{
         opacity: 1;
     }
     30%{
-        transform: translateX(120px) translateY(-140px);
+        transform: translateX(20px) translateY(-140px) scale(1.1);
         opacity: 1;
     }
     65%{
@@ -38,4 +38,96 @@ svg{
         transform: translateX(0) translateY(0);
         opacity: 0;
     }
+}
+
+nav{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+
+
+#leftNav{
+    justify-self: flex-start;
+    /* margin-right: auto; */
+    width: 20%;
+    display: inline-block;
+}
+#leftNav table{
+    display: inline-block;
+}
+.up{
+    font-size: 24px;
+    letter-spacing: 0.186em;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.down {
+    font-size: 15px ;
+    letter-spacing: 0.380em;
+    color: #2196F3;
+    text-align: center;
+}
+
+#rightNav{
+    display: inline-block;
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-top: -10px;
+}
+#rightNav a{
+    margin: 0;
+    margin-right: 15px;
+    letter-spacing: 0.186em;
+    font-size: 13px;
+    cursor: pointer;
+}
+#rightNav a:first-child{
+    color: #2196F3;
+    cursor: cell;
+}
+
+#centerDiv{
+    margin-top: 20vh;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#svgAni{
+    width: 30%;
+    /* margin: 0 auto; */
+    /* margin-top: 200px;
+    margin-left: 50px; */ 
+}
+
+
+#textAbout{
+    /* margin: 0 auto; */
+    margin-left: 200px;
+    width: 30%;
+}
+#textAbout h1{
+    text-align: center;
+    font-size: 53px;
+}
+#textAbout h1 i{
+    font-style: normal;
+    color: #2196F3;
+    letter-spacing: 0.186em;
+}
+#textAbout p{
+    font-size: 21px;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.186em;
+    text-align: justify;
 }
