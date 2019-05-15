@@ -11,6 +11,7 @@
 	src="https://code.jquery.com/jquery-3.4.0.min.js"
 	integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
 	crossorigin="anonymous"></script>
+	<script src="./transJQ.js"></script>
 	<script
 	src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
@@ -19,6 +20,13 @@
 	<link rel="icon" href="icon.png">
 </head>
 <body>
+	<div id="load"></div>
+
+	<div id="waves">
+		<img src="./blue.png" id="blWav" alt="" srcset="">
+		<img src="./white.png" id="wWav" alt="" srcset="">
+	</div>
+
 	<nav>
 		<section id="leftNav">
 			<table>
@@ -39,6 +47,16 @@
 		</ul>
 
 	</nav>
+
+	<div id="bubLinks">
+		<a href="#">
+			<img src="./git.png" alt="" srcset="">
+		</a>
+		<a href="#">
+			<img src="./link.png" id="linkedIn" alt="" srcset="">
+		</a>
+	</div>
+
 
 	<div id="centerDiv">
 		<div id="svgAni">
@@ -1090,7 +1108,7 @@
 		</div>
 		<div id="textAbout">
 			<h1>WHO <i>AM</i> I ?</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deserunt nihil dolore ipsam error, nobis laboriosam ullam totam inventore dolorum incidunt sint minus mollitia, necessitatibus sit temporibus. Quaerat, odio amet.</p>
+			<p>I'm teen developer interested in Python and JavaScript. Presently I'm in second high school class. Coding is my passion and lifestyle. I love coding solutions in Node.js and Express.js. For my front-end apps I'm using Vue.js but I'm planning migrate to React</p>
 		</div>
 
 
@@ -1110,7 +1128,7 @@
 	</div>
 
 	<div id="lowcont">
-		<div id="lftalg">
+		<div id="lftalg" class="fade">
 			<div class="flx">
 				<img src="./vue.png" alt="" srcset="">
 				<p>Vue.js</p>
@@ -1126,7 +1144,7 @@
 				</div>
 		</div>
 
-		<div id="moreitems">
+		<div id="moreitems" class="fade">
 			<div class="flexrow">
 				<p>WIN SERV</p>
 				<p><i>PYTHON</i></p>
@@ -1151,11 +1169,11 @@
 			<div class="bubble"></div>
 			<div class="bubble"></div>
 			<p id="bubp" style="display: none">BACKEND DEVELOPER</p>
-			<div id="bubInfo">
+			<div id="bubInfo" class="fade">
 				<h1>BACKEND DEV</h1>
 				<div id="bubln">
 				</div>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia facilis suscipit asperiores sit assumenda magni distinctio, odio beatae ducimus quo fugiat modi, consectetur incidunt accusantium repellendus deserunt officia corrupti!</p>
+				<p>I'm in love with creating server-side applications, I have some projects done in Express.js. I want to learn more aboud Django and backend services in Python</p>
 			</div>
 		</div>
 	</div>
